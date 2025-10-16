@@ -6,7 +6,7 @@
 //
 
 #include <stdio.h>
-static int all_files; // main.c에서만 쓸 수 있게
+static int all_files; // main.c에서만 쓸 수 있게 - 컴파일 안됨
 
 extern void sub();
 
