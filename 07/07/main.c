@@ -7,17 +7,20 @@
 
 #include <stdio.h>
 
-int inc(int counter);
+void f(void);
 
-int main(void) {
-    int i=10;
-    printf("함수 호출전 i = %d\n", i);
-    inc(i); // i = inc(i)의 경우 반환값 활용 -> +1, i=11 출력
-    printf("함수 호출후 i = %d\n", i);
+int i;
+int main(void)
+{
+    for (i=0; i<5; i++)
+    {
+        f();
+    }
     return 0;
 }
-int inc(int counter)
+    void f(void)
 {
-    counter++;
-    return counter;
+    for (i=0; i<10; i++)
+        printf("#");
 }
+
