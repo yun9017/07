@@ -6,13 +6,13 @@
 //
 
 #include <stdio.h>
-int all_files;
+static int all_files; // main.c에서만 쓸 수 있게
 
 extern void sub();
 
 int main(void)
 {
-    sub(); // extern 통해 다른 파일 함수 연결
+    sub();
     printf("%d\n",all_files);
     return 0;
     }
